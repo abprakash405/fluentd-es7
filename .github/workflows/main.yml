@@ -2,5 +2,5 @@ name: test
 on: [push]
 jobs:
   firstusecase:
-    uses: abprakash405/mypublicrepo/.github/workflows/blank.yml@main
+    uses: abprakash405org/mypublicrepo/.github/workflows/blank.yml@main
   
