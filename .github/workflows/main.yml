@@ -1,6 +1,8 @@
 name: test
 on: [push]
 jobs:
+  firstusecase:
+    uses: abprakash405org/mypublicrepo/.github/workflows/blank.yml@main
   test:
     runs-on: ubuntu-latest
     strategy:
@@ -9,8 +11,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your j ob can access it
       - uses: actions/checkout@v3
-      
-      - uses: abprakash405org/mypublicrepo/.github/workflows/blank.yml@main
+
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
