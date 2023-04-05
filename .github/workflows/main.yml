@@ -1,5 +1,9 @@
 name: test
-on: [push]
+
+
+on:
+  workflow_call:
+  
 jobs:
   firstusecase:
     uses: abprakash405org/mypublicrepo/.github/workflows/blank.yml@main
